@@ -8,6 +8,7 @@
     "socket.io-client": "^4.7.5"
   },
   "scripts": {
+    "start": "node ./index.js",
     "serve": "node ./index.js"
   },
   "eslintConfig": {
