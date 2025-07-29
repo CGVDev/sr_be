@@ -20,7 +20,6 @@ const io = socketio(server, {
             'https://cgveron.com/showroom/panoramic',
         ],
         methods: ["GET", "POST"],
-        credentials: true
     }
 });
 
