@@ -6,7 +6,9 @@ const { SocketActions } = require("./utils/SocketActions.js");
 const app = express();
 // app.use(express.static("./fe"));
 
-const server = app.listen(8080);
+const server = app.listen(process.env.PORT || 3000, () => {
+    console.log(`Server is running on port ${process.env.PORT}...`);
+});
 
 const io = socketio(server, {
     cors: {
