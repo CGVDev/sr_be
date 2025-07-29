@@ -1,10 +1,10 @@
 const express = require("express");
 const socketio = require("socket.io");
 // const socketMain = require("./sockets/main");
-const { SocketActions } = require("../src/utils/SocketActions");
+const { SocketActions } = require("./utils/SocketActions.js");
 
 const app = express();
-app.use(express.static("./fe"));
+// app.use(express.static("./fe"));
 
 const server = app.listen(8080);
 
