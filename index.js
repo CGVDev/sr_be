@@ -13,7 +13,6 @@ const server = app.listen(process.env.PORT || 3000, () => {
 const io = socketio(server, {
     cors: {
         origin: [
-            '*',
             'https://cgveron.com',
             'https://cgveron.com/showroom', 
             'https://cgveron.com/showroom/control', 
